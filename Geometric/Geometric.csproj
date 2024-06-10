@@ -12,4 +12,10 @@
     <Folder Include="View\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Remove="Model\ITrapazoid.cs" />
+    <Compile Remove="Model\IRectangle.cs" />
+    <Compile Remove="Model\IParallelogram.cs" />
+  </ItemGroup>
+
 </Project>

@@ -2,7 +2,7 @@
 
 namespace Geometric.Model
 {
-    public class Square
+    public class Square : IGeometricShape
     {
         private float _side;
 
@@ -16,13 +16,19 @@ namespace Geometric.Model
         // Constructor
         public Square(float side)
         {
-            this._side = side;
+            _side = side;
         }
 
-        //Method for calculating the perimiter of the square
-        public float CalculatePerimiter()
+        // Method for calculating the perimeter of the square
+        public float CalculatePerimeter()
         {
             return _side * 4;
+        }
+
+        // Method for calculating the area of the square
+        public float CalculateArea()
+        {
+            return _side * _side;
         }
     }
 }
